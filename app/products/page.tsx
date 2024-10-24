@@ -2,98 +2,121 @@
 
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import { useEffect } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import "./products.css";
 
 export default function ProductPage() {
-    useEffect(() => {
-        const style = document.createElement("style");
-        style.textContent = `
-          @keyframes zoomInBackground {
-            0% {
-              transform: scale(1);
-            }
-            50% {
-              transform: scale(1.2);
-            }
-            100% {
-              transform: scale(1);
-            }
-          }
-    
-          @keyframes fadeIn {
-            from {
-              opacity: 0;
-              transform: translateY(20px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-    
-          .product-card {
-            transition: all 0.3s ease;
-          }
-    
-          .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-          }
-    
-          .product-image {
-            transition: transform 0.3s ease;
-          }
-    
-          .product-card:hover .product-image {
-            transform: scale(1.1);
-          }
-    
-          .product-description {
-            transition: max-height 0.3s ease, opacity 0.3s ease;
-            max-height: 0;
-            opacity: 0;
-            overflow: hidden;
-          }
-    
-          .product-card:hover .product-description {
-            max-height: 200px;
-            opacity: 1;
-          }
-        `;
-        document.head.appendChild(style);
-        return () => {
-            document.head.removeChild(style);
-        };
-    }, []);
-
     const products = [
         {
-            name: "Biological Safety Cabinet",
-            brand: "Esco",
-            image: "/placeholder.svg?height=300&width=300",
+            name: "Akoxdo Plus",
+            brand: "Akoxdo",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729740998/akoxdo-plus.png",
             description:
                 "A Biological Safety Cabinet (BSC), also known as a Biosafety Cabinet is mainly used for handling pathogenic biological samples or for applications that require a sterile work environment.",
         },
         {
-            name: "Culture Media for Microbiology",
-            brand: "Merck Millipore",
-            image: "/placeholder.svg?height=300&width=300",
+            name: "Ambroxol-H",
+            brand: "Ambroxol-H",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752439/ambroxol-h.png",
             description:
                 "Granular media - GranuCult®, and powdered media - NutriSelect® with multiple quality control levels that comply with various standards such as EP, USP, JP, ISO, or FDA.",
         },
         {
-            name: "EZ-Fit™ Filtration Unit",
-            brand: "Merck Millipore",
-            image: "/placeholder.svg?height=300&width=300",
+            name: "Antikans",
+            brand: "Antikans",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752496/antikans.webp",
             description:
                 "The EZ-Fit™ Filtration Unit is a disposable filtration device for bioburden testing of liquid samples including water, in-process samples, and final product.",
         },
         {
-            name: "EZ-Fit™ Manifold",
-            brand: "Merck Millipore",
-            image: "/placeholder.svg?height=300&width=300",
+            name: "Basmetin",
+            brand: "Basmetin",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752573/basmetin.webp",
+            description:
+                "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
+        },
+        {
+            name: "Butagan",
+            brand: "Butagan",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752606/butagan.webp",
+            description:
+                "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
+        },
+        {
+            name: "Dopharalgic",
+            brand: "Dopharalgic",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752642/dopharalgic.webp",
+            description:
+                "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
+        },
+        {
+            name: "Aspergillus Fumigatus ELISA Kit",
+            brand: "Bordier",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752677/elisa-igg-kit-test.jpg",
+            description:
+                "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
+        },
+        {
+            name: "Fasthan 20",
+            brand: "Fasthan",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752736/fasthan.webp",
+            description:
+                "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
+        },
+        {
+            name: "Ganlotus",
+            brand: "Ganlotus",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752748/ganlotus.webp",
+            description:
+                "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
+        },
+        {
+            name: "Gintecin",
+            brand: "Gintecin",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752757/gintecin.webp",
+            description:
+                "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
+        },
+        {
+            name: "Hepadays",
+            brand: "Hepadays",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752767/hepadays.jpg",
+            description:
+                "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
+        },
+        {
+            name: "Kidvita 7.5",
+            brand: "Kidvita 7.5",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752774/kidvita-7.5.webp",
+            description:
+                "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
+        },
+        {
+            name: "Kidvita 15",
+            brand: "Kidvita 15",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752782/kidvita-15.webp",
+            description:
+                "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
+        },
+        {
+            name: "Nuroact",
+            brand: "Namha Pharmaceuticals",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752790/nuroact.jpg",
+            description:
+                "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
+        },
+        {
+            name: "Polcalmex",
+            brand: "Polcalmex",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752798/polcalmex.webp",
+            description:
+                "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
+        },
+        {
+            name: "Zasemer 2g",
+            brand: "Amvipharm",
+            image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752807/zasemer.png",
             description:
                 "EZ-Fit™ Manifold for universal laboratory filtration- Unique design for easy cleaning and decontamination- Different filtration heads for both reusable and disposable filtration units.",
         },

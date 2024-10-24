@@ -12,6 +12,7 @@ import {
 import { useEffect } from "react";
 import Header from "./header";
 import Footer from "./footer";
+import Link from "next/link";
 
 export default function ResponsivePharmacyHome() {
     useEffect(() => {
@@ -46,7 +47,7 @@ export default function ResponsivePharmacyHome() {
                             backgroundImage:
                                 "url('https://res.cloudinary.com/dzyeanw6v/image/upload/v1729658542/hsvcf23k7tcsipontgxt.webp')",
                             animation:
-                                "zoomInBackground 40s ease-in-out infinite",
+                                "zoomInBackground 25s ease-in-out infinite",
                             filter: "brightness(1.4)",
                         }}
                     ></div>
@@ -61,12 +62,14 @@ export default function ResponsivePharmacyHome() {
                             forefront of our mission.
                         </p>
                         <div className="flex justify-center sm:justify-start">
-                            <Button
-                                size="lg"
-                                className="text-xl px-10 py-6 bg-white text-[#008080] hover:bg-gray-100 rounded-full transition-all duration-300 transform hover:scale-105"
-                            >
-                                Explore Our Services
-                            </Button>
+                            <Link href={"/contact"}>
+                                <Button
+                                    size="lg"
+                                    className="text-xl px-10 py-6 bg-white text-[#008080] hover:bg-gray-100 rounded-full transition-all duration-300 transform hover:scale-105"
+                                >
+                                    Explore Our Services
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -78,7 +81,7 @@ export default function ResponsivePharmacyHome() {
                                 Global Healthcare Impact
                             </h2>
                             <p className="text-muted-foreground mb-4">
-                                As a leading pharmacy, we're committed to
+                                As a leading pharmacy, we&apos;re committed to
                                 improving global health outcomes. Our extensive
                                 range of medications and health products
                                 contributes significantly to treating various
@@ -86,8 +89,8 @@ export default function ResponsivePharmacyHome() {
                             </p>
                             <p className="text-muted-foreground">
                                 With a focus on accessibility and affordability,
-                                we're making a tangible difference in people's
-                                lives every day.
+                                we&apos;re making a tangible difference in
+                                people&apos;s lives every day.
                             </p>
                         </div>
                         <div className="md:w-1/3 flex justify-center">

@@ -12,9 +12,9 @@ export default function Footer() {
                         </h2>
                         <address className="not-italic">
                             <p>Head Office</p>
-                            <p>123 Pharmacy Street</p>
-                            <p>Healthville, HV1 2PH</p>
-                            <p>United Kingdom</p>
+                            <p>No. 6 - LK4 Commercial Building at Group 6</p>
+                            <p>Xuan Phuong Ward, Nam Tu Liem District</p>
+                            <p>Hanoi City, Vietnam</p>
                         </address>
                     </div>
                     <div className="md:col-span-2 flex flex-col md:flex-row justify-between">
