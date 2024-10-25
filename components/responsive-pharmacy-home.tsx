@@ -39,7 +39,7 @@ export default function ResponsivePharmacyHome() {
         <div className="min-h-screen flex flex-col">
             <Header />
 
-            <main className="flex-grow pt-[72px] sm:pt-[64px]">
+            <main className="flex-grow">
                 <section className="relative bg-cover bg-center min-h-[calc(100vh-72px)] sm:min-h-[calc(100vh-64px)] py-24 sm:py-32 px-4 sm:px-6 flex items-center overflow-hidden">
                     <div
                         className="absolute inset-0 bg-cover bg-center"
@@ -94,7 +94,7 @@ export default function ResponsivePharmacyHome() {
                             </p>
                         </div>
                         <div className="md:w-1/3 flex justify-center">
-                            <div className="relative w-48 h-48 bg-primary rounded-full flex flex-col items-center justify-center text-primary-foreground">
+                            <div className="relative w-48 h-48 bg-sky-500 rounded-full flex flex-col items-center justify-center text-primary-foreground">
                                 <span className="text-4xl font-bold">$8</span>
                                 <span className="text-xl font-semibold">
                                     BILLION
@@ -107,7 +107,7 @@ export default function ResponsivePharmacyHome() {
                     </div>
                 </section>
 
-                <section className="bg-primary text-primary-foreground py-24 sm:py-32 px-4 sm:px-6">
+                <section className="bg-cyan-700 text-primary-foreground py-24 sm:py-32 px-4 sm:px-6">
                     <div className="max-w-6xl mx-auto">
                         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
                             Pharmaceutical Challenges
@@ -144,7 +144,7 @@ export default function ResponsivePharmacyHome() {
                     </div>
                 </section>
 
-                <section className="bg-muted py-24 sm:py-32 px-4 sm:px-6">
+                <section className="bg-amber-400 py-24 sm:py-32 px-4 sm:px-6">
                     <div className="max-w-6xl mx-auto">
                         <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center">
                             Clinical Benefits of a Patient-Centered Approach

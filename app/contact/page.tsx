@@ -6,10 +6,7 @@ export default function ContactPage() {
     return (
         <div className="min-h-screen flex flex-col">
             <Header />
-            <h1>Contact us</h1>
-            <div className="max-2xl:">
-                <HubSpotForm />
-            </div>
+            <HubSpotForm />
             <Footer />
         </div>
     );

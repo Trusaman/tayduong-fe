@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 declare global {
     interface Window {
@@ -47,14 +48,25 @@ export default function StyledHubSpotForm() {
 
     return (
         <div className="min-h-screen bg-sky-400 flex items-center justify-center p-4">
-            <div className="w-full max-w-2xl bg-sky-400 rounded-lg shadow-lg">
-                <h1 className="text-5xl font-bold text-navy-900 mb-6">
-                    Contact us
+            <div className="w-full max-w-2xl bg-sky-400 rounded-lg shadow-lg p-6">
+                <h1 className="text-3xl md:text-4xl font-bold text-navy-900 mb-6">
+                    Contact us / Liên hệ với chúng tôi
                 </h1>
+                {!isLoaded && (
+                    <div className="space-y-4">
+                        <Skeleton className="h-6 w-3/4" />
+                        <Skeleton className="h-10 w-full" />
+                        <Skeleton className="h-6 w-3/4" />
+                        <Skeleton className="h-10 w-full" />
+                        <Skeleton className="h-6 w-3/4" />
+                        <Skeleton className="h-10 w-full" />
+                        <Skeleton className="h-10 w-1/3" />
+                    </div>
+                )}
                 <div
                     id="hubspot-form-container"
                     className={`transition-opacity duration-300 ${
-                        isLoaded ? "opacity-100" : "opacity-0"
+                        isLoaded ? "opacity-100" : "opacity-0 absolute"
                     }`}
                 />
                 <style jsx global>{`

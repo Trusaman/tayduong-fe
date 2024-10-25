@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-900 text-white py-8 px-4 sm:px-6">
+        <footer className="bg-teal-600 text-white py-8 px-4 sm:px-6">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
@@ -63,7 +63,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="text-lg font-semibold mb-2">BẢN ĐỒ</h3>
+                        <h3 className="text-lg font-semibold mb-2">MAP</h3>
                         <div className="relative w-full h-48 bg-gray-700">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8807456095376!2d105.76439661476343!3d21.03576098599329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0x53cefc99d6b0bf6f!2zQ8O0bmcgVHkgVG5oaCBExrDhu6NjIFBo4bqpbSBOYXRyYQ!5e0!3m2!1sen!2s!4v1651191759315!5m2!1sen!2s"
@@ -80,7 +80,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Xem bản đồ lớn hơn
+                                View bigger map
                             </Link>
                         </div>
                     </div>

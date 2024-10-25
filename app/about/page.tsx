@@ -9,8 +9,8 @@ export default function AboutUs() {
         <div>
             <Header />
             <div className="min-h-screen bg-white">
-                <div className="container mx-auto px-4 py-8">
-                    <div className="grid md:grid-cols-2 gap-8 items-center mb-16">
+                <div className="container mx-auto px-4 py-4 sm:py-8">
+                    <div className="grid md:grid-cols-2 gap-8 items-center mb-8 sm:mb-16">
                         <div className="relative h-[300px] md:h-[400px]">
                             <Image
                                 src="https://res.cloudinary.com/dzyeanw6v/image/upload/v1729763801/about-us-1.jpg"
@@ -20,7 +20,7 @@ export default function AboutUs() {
                                 className="rounded-lg"
                             />
                         </div>
-                        <div className="mt-16">
+                        <div>
                             <h3 className="text-xl text-gray-600 mb-2">
                                 About us
                             </h3>
@@ -48,7 +48,7 @@ export default function AboutUs() {
                             <Link href="/products">
                                 <Button
                                     variant="outline"
-                                    className="hover:bg-slate-600 hover:text-white"
+                                    className="hover:bg-slate-600 hover:text-white border-slate-600"
                                 >
                                     OUR PRODUCTS
                                 </Button>
