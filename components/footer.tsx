@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
                         <h2 className="text-2xl font-bold mb-4">
-                            Tay Duong Pharmacy
+                            Tay Duong Pharma
                         </h2>
                         <div className="space-y-2">
                             <div className="flex items-start">
@@ -102,7 +102,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
-                    <p>&copy; 2024 Tay Duong Pharmacy. All rights reserved.</p>
+                    <p>&copy; 2024 Tay Duong Pharma. All rights reserved.</p>
                     <div className="flex mt-4 md:mt-0">
                         <Link href="#" className="mr-4 hover:text-gray-200">
                             <TwitterIcon className="w-6 h-6" />

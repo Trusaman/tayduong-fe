@@ -13,7 +13,8 @@ export default function AboutUs() {
                     <div className="grid md:grid-cols-2 gap-8 items-center mb-8 sm:mb-16">
                         <div className="relative h-[300px] md:h-[400px]">
                             <Image
-                                src="https://res.cloudinary.com/dzyeanw6v/image/upload/v1729763801/about-us-1.jpg"
+                                // src="https://res.cloudinary.com/dzyeanw6v/image/upload/v1729763801/about-us-1.jpg"
+                                src="/van-phong-1.jpg"
                                 alt="DNA Strand"
                                 layout="fill"
                                 objectFit="cover"
@@ -48,7 +49,7 @@ export default function AboutUs() {
                             <Link href="/products">
                                 <Button
                                     variant="outline"
-                                    className="hover:bg-slate-600 hover:text-white border-slate-600"
+                                    className="hover:bg-slate-600 hover:text-white border-slate-600 pt-2"
                                 >
                                     OUR PRODUCTS
                                 </Button>
@@ -83,7 +84,8 @@ export default function AboutUs() {
 
                         <div className="relative h-[300px] md:h-[400px]">
                             <Image
-                                src="https://res.cloudinary.com/dzyeanw6v/image/upload/v1729763808/about-us-2.jpg"
+                                // src="https://res.cloudinary.com/dzyeanw6v/image/upload/v1729763808/about-us-2.jpg"
+                                src="/van-phong-4.jpg"
                                 alt="Handshake with World Map"
                                 layout="fill"
                                 objectFit="cover"

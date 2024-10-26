@@ -9,14 +9,14 @@ export default function Header() {
                     <div className="flex items-center mb-2 sm:mb-0">
                         <Image
                             src="https://res.cloudinary.com/dzyeanw6v/image/upload/v1729671940/tayduong-logo.jpg"
-                            alt="Tay Duong Pharmacy Logo"
+                            alt="Tay Duong Pharma Logo"
                             width={40}
                             height={40}
                             className="mr-2 sm:mr-3"
                         />
                         <Link href="/">
                             <span className="text-xl font-semibold  hover:underline">
-                                Tay Duong Pharmacy
+                                Tay Duong Pharma
                             </span>
                         </Link>
                     </div>
