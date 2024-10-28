@@ -26,10 +26,10 @@ export default function AboutUs() {
                                 About us
                             </h3>
                             <h2 className="text-3xl font-bold mb-4">
-                                TAY DUONG PHAMARCY JSC
+                                TAY DUONG PHARMA JSC
                             </h2>
                             <p className="mb-4">
-                                TAY DUONG PHAMARCY JSC Company Limited was
+                                TAY DUONG PHARMA Joint Stock Company was
                                 established in 2018. We specialize in providing
                                 solutions for clinical diagnosis, biological
                                 research and pharmaceutical industry.

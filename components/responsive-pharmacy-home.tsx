@@ -9,30 +9,54 @@ import {
     PoundSterling,
     UserPlus,
 } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Header from "./header";
 import Footer from "./footer";
 import Link from "next/link";
 
+const backgroundImages = [
+    "https://res.cloudinary.com/dzyeanw6v/image/upload/v1730085522/hfz4jjbcz7joh9rkpz0z.jpg",
+    "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729658542/hsvcf23k7tcsipontgxt.webp",
+];
+
 export default function ResponsivePharmacyHome() {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
     useEffect(() => {
         const style = document.createElement("style");
         style.textContent = `
-      @keyframes zoomInBackground {
-        0% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.2);
-        }
-        100% {
-          transform: scale(1);
-        }
-      }
-    `;
+          @keyframes zoomInBackground {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.2);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+    
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+        `;
         document.head.appendChild(style);
+
+        const intervalId = setInterval(() => {
+            setCurrentImageIndex(
+                (prevIndex) => (prevIndex + 1) % backgroundImages.length
+            );
+        }, 5000); // Change image every 5 seconds
+
         return () => {
             document.head.removeChild(style);
+            clearInterval(intervalId);
         };
     }, []);
     return (
@@ -41,13 +65,52 @@ export default function ResponsivePharmacyHome() {
 
             <main className="flex-grow">
                 <section className="relative bg-cover bg-center min-h-[calc(100vh-72px)] sm:min-h-[calc(100vh-64px)] py-24 sm:py-32 px-4 sm:px-6 flex items-center overflow-hidden">
+                    {backgroundImages.map((image, index) => (
+                        <div
+                            key={index}
+                            className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out"
+                            style={{
+                                backgroundImage: `url('${image}')`,
+                                opacity: index === currentImageIndex ? 1 : 0,
+                                animation:
+                                    index === currentImageIndex
+                                        ? "zoomInBackground 40s ease-in-out infinite, fadeIn 1s ease-in-out"
+                                        : "none",
+                                filter: "brightness(1.4)",
+                            }}
+                        ></div>
+                    ))}
+                    <div className="absolute inset-0 bg-black opacity-30"></div>
+                    <div className="max-w-7xl mx-auto relative z-10 flex flex-col items-center sm:items-start justify-center h-full text-gray-800">
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center sm:text-left text-white leading-tight">
+                            Your Health, Our Priority
+                        </h1>
+                        <p className="text-xl sm:text-2xl mb-10 text-center sm:text-left text-white max-w-3xl">
+                            Providing quality healthcare solutions for a better
+                            tomorrow, ensuring your well-being is at the
+                            forefront of our mission.
+                        </p>
+                        <div className="flex justify-center sm:justify-start">
+                            <Link href="/contact">
+                                <Button
+                                    size="lg"
+                                    className="text-xl px-10 py-6 bg-white text-[#008080] hover:bg-gray-100 rounded-full transition-all duration-300 transform hover:scale-105"
+                                >
+                                    Explore Our Services
+                                </Button>
+                            </Link>
+                        </div>
+                    </div>
+                </section>
+                {/* <section className="relative bg-cover bg-center min-h-[calc(100vh-72px)] sm:min-h-[calc(100vh-64px)] py-24 sm:py-32 px-4 sm:px-6 flex items-center overflow-hidden">
                     <div
                         className="absolute inset-0 bg-cover bg-center"
                         style={{
                             backgroundImage:
-                                "url('https://res.cloudinary.com/dzyeanw6v/image/upload/v1729658542/hsvcf23k7tcsipontgxt.webp')",
+                                // "url('https://res.cloudinary.com/dzyeanw6v/image/upload/v1729658542/hsvcf23k7tcsipontgxt.webp')",
+                                "url('https://res.cloudinary.com/dzyeanw6v/image/upload/v1730085522/hfz4jjbcz7joh9rkpz0z.jpg')",
                             animation:
-                                "zoomInBackground 25s ease-in-out infinite",
+                                "zoomInBackground 40s ease-in-out infinite",
                             filter: "brightness(1.4)",
                         }}
                     ></div>
@@ -72,7 +135,7 @@ export default function ResponsivePharmacyHome() {
                             </Link>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section className="py-24 sm:py-32 px-4 sm:px-6">
                     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">

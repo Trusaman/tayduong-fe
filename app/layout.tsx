@@ -9,8 +9,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-    title: "Tay Duong Pharmacy",
-    description: "Website for Tay Duong Pharmacy",
+    title: "Tay Duong Pharma",
+    description: "Website for Tay Duong Pharma",
 };
 
 export default function RootLayout({
