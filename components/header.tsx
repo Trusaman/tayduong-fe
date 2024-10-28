@@ -1,7 +1,10 @@
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Header() {
+    const t = useTranslations("Header");
+
     return (
         <header className="bg-white sticky  top-0 left-0 right-0 z-50 ">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 py-2 sm:py-4">
@@ -16,7 +19,8 @@ export default function Header() {
                         />
                         <Link href="/">
                             <span className="text-xl font-semibold  hover:underline">
-                                Tay Duong Pharma
+                                {/* Tay Duong Pharma */}
+                                {t("Company")}
                             </span>
                         </Link>
                     </div>
@@ -32,7 +36,8 @@ export default function Header() {
                                             href={`/${item.toLowerCase()}`}
                                             className="text-base sm:text-lg hover:text-primary hover:underline transition-all duration-200"
                                         >
-                                            {item}
+                                            {/* {item} */}
+                                            {t(item)}
                                         </Link>
                                     </li>
                                 )

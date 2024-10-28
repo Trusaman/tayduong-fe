@@ -1,0 +1,50 @@
+{
+    "Header": {
+        "Home": "Home",
+        "Products": "Products",
+        "About": "About",
+        "Contact": "Contact",
+        "Company": "Tay Duong Pharma"
+    },
+    "Footer": {
+        "Company": "Tay Duong Pharma",
+        "Address": "No. 6 - LK4 Commercial Building at Group 6, Xuan Phuong Ward, Nam Tu Liem District, Hanoi City, Vietnam",
+        "City": "Hanoi",
+        "Telephone": "(+84) 0247.107.9966",
+        "QuickLinks": "Quick Links",
+        "AboutUs": "About Us",
+        "OurProducts": "Our Products",
+        "ContactUs": "Contact Us",
+        "MAP": "MAP",
+        "ViewBiggerMap": "View bigger map",
+        "Certifications": "Certifications",
+        "Copyright": "Tay Duong Pharma. All rights reserved.",
+        "PrivacyPolicy": "Privacy Policy",
+        "TermsOfService": "Terms and Conditions",
+        "TOS": "This website and its content are protected by copyright law. Any unauthorised use, reproduction or distribution of this website or its content in any form is strictly prohibited."
+    },
+    "HomePage": {
+        "Welcome": "Welcome to Our Website",
+        "Subtitle": "Discover amazing products and services",
+        "ExploreButton": "Explore Now"
+    },
+    "ProductsPage": {
+        "Title": "Our Products",
+        "FilterBy": "Filter by",
+        "SortBy": "Sort by",
+        "AddToCart": "Add to Cart"
+    },
+    "AboutPage": {
+        "Title": "About Us",
+        "OurStory": "Our Story",
+        "OurMission": "Our Mission",
+        "OurTeam": "Our Team"
+    },
+    "ContactPage": {
+        "Title": "Contact Us",
+        "Name": "Name",
+        "Email": "Email",
+        "Message": "Message",
+        "Send": "Send"
+    }
+}

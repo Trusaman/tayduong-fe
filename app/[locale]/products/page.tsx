@@ -3,11 +3,14 @@ import Header from "@/components/header";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import "./products.css";
-import Link from "next/link";
 import { getProducts } from "@/api/products";
+import { Link } from "@/i18n/routing";
+import {} from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 export default async function ProductPage() {
     const products = await getProducts();
+    const t = await getTranslations("ProductsPage");
 
     return (
         <div className="min-h-screen flex flex-col">
@@ -16,7 +19,7 @@ export default async function ProductPage() {
                 <section className="pb-12 pt-4  px-4 sm:px-6 lg:px-8">
                     <div className="max-w-7xl mx-auto">
                         <h2 className="text-3xl font-extrabold text-gray-900 mb-8">
-                            Our Products
+                            {t("Title")}
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {products.map((product, index) => (

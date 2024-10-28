@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function AboutUs() {
+    const t = useTranslations("AboutPage");
+
     return (
         <div>
             <Header />
@@ -23,7 +26,8 @@ export default function AboutUs() {
                         </div>
                         <div>
                             <h3 className="text-xl text-gray-600 mb-2">
-                                About us
+                                {/* About us */}
+                                {t("Title")}
                             </h3>
                             <h2 className="text-3xl font-bold mb-4">
                                 TAY DUONG PHARMA JSC

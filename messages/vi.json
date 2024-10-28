@@ -1,0 +1,50 @@
+{
+    "Header": {
+        "Home": "Trang chủ",
+        "Products": "Sản phẩm",
+        "About": "Giới thiệu",
+        "Contact": "Liên hệ",
+        "Company": "Y dược Tây Dương"
+    },
+    "Footer": {
+        "Company": "Y dược Tây Dương",
+        "Address": "Số 6 - LK4 Khu nhà ở thương mại tại tổ 6, Phường Xuân Phương, Quận Nam Từ Liêm, Thành phố Hà Nội, Việt Nam",
+        "City": "Hà Nội",
+        "Telephone": "0247.107.9966",
+        "QuickLinks": "Đường dẫn",
+        "AboutUs": "Về chúng tôi",
+        "OurProducts": "Sản phẩm",
+        "ContactUs": "Liên hệ",
+        "MAP": "Bản đồ",
+        "ViewBiggerMap": "Phóng to",
+        "Certifications": "Chứng nhận",
+        "Copyright": "Bản quyền thuộc về CTCP Y dược Tây Dương.",
+        "PrivacyPolicy": "Chính sách bảo mật",
+        "TermsOfService": "Điều khoản dịch vụ",
+        "TOS": "Trang web này và nội dung của nó được bảo vệ bởi luật bản quyền. Mọi hành vi sử dụng, sao chép hoặc phân phối trang web này hoặc nội dung của nó dưới bất kỳ hình thức nào mà không được phép đều bị nghiêm cấm."
+    },
+    "HomePage": {
+        "Welcome": "Chào mừng đến với Trang web của Chúng tôi",
+        "Subtitle": "Khám phá các sản phẩm và dịch vụ tuyệt vời",
+        "ExploreButton": "Khám phá ngay"
+    },
+    "ProductsPage": {
+        "Title": "Sản phẩm của Chúng tôi",
+        "FilterBy": "Lọc theo",
+        "SortBy": "Sắp xếp theo",
+        "AddToCart": "Thêm vào giỏ hàng"
+    },
+    "AboutPage": {
+        "Title": "Về Chúng tôi",
+        "OurStory": "Câu chuyện của Chúng tôi",
+        "OurMission": "Sứ mệnh của Chúng tôi",
+        "OurTeam": "Đội ngũ của Chúng tôi"
+    },
+    "ContactPage": {
+        "Title": "Liên hệ Chúng tôi",
+        "Name": "Tên",
+        "Email": "Email",
+        "Message": "Tin nhắn",
+        "Send": "Gửi"
+    }
+}

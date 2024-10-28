@@ -12,7 +12,7 @@ import {
 import { useEffect, useState } from "react";
 import Header from "./header";
 import Footer from "./footer";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 const backgroundImages = [
     "https://res.cloudinary.com/dzyeanw6v/image/upload/v1730085522/hfz4jjbcz7joh9rkpz0z.jpg",
