@@ -10,6 +10,7 @@ const products = [
             "Bổ tỳ vị, tăng cường tiêu hóa, phòng ngừa còi xương, suy dinh dưỡng.",
         descriptionDetail:
             "Bổ tỳ vị, tăng cường tiêu hóa, phòng ngừa còi xương, suy dinh dưỡng.",
+        category: "Thuốc bổ",
     },
     {
         id: 2,
@@ -20,6 +21,7 @@ const products = [
         descriptionDetail: `Thuốc giúp long đờm, tiêu chất nhầy đường hô hấp, thường dùng để điều trị ban đầu trong các trường hợp: 
 - Các bệnh cấp hoặc mạn tính ở đường hô hấp có kèm tăng tiết dịch phế quản không bình thường như: Viêm phổi, viêm tai giữa, viêm xoang, viêm mũi họng, đặc biệt trong đợt cấp của viêm phế quản mạn, hen phế quản, viêm phế quản dạng hen.
  - Các bệnh nhân sau mổ hoặc cấp cứu để phòng các biến chứng ở phổi.`,
+        category: "Thuốc hô hấp",
     },
     {
         id: 3,
@@ -30,6 +32,7 @@ const products = [
             "Hỗ trợ tăng cường hệ miễn dịch đã suy giảm ở người cao tuổi",
         descriptionDetail:
             "Hỗ trợ tăng cường hệ miễn dịch đã suy giảm ở người cao tuổi",
+        category: "Thuốc bổ",
     },
     {
         id: 4,
@@ -51,6 +54,7 @@ const products = [
 - Thiếu máu tan máu tự miễn, suy giảm tiểu cầu
 - Bệnh bạch cầu cấp tính và bạch huyết, u lympho ác tính, đau tùy 
 - Ức chế miễn dịch trong quá trình cấy ghép`,
+        category: "Thuốc kháng sinh",
     },
     {
         id: 5,
@@ -60,6 +64,7 @@ const products = [
         description:
             "Thuốc được sử dụng trong điều trị triệu chứng ho trong các trường hợp ho khan",
         descriptionDetail: `Thuốc được sử dụng trong điều trị triệu chứng ho trong các trường hợp ho khan`,
+        category: "Thuốc hô hấp",
     },
     {
         id: 6,
@@ -74,6 +79,7 @@ Nhiễm khuẩn da và cấu trúc da`,
 + Viêm tai giữa, viêm xoang cấp: do Streptococcus pneumoniae, Haemophilus influenzae (kể cả chủng tiết ẞ- lactamase) và Moraxella catarrhalis (kể cả chủng tiết ẞ- lactamase).
  - Nhiễm khuẩn đường hô hấp dưới: Viêm phổi thứ phát cấp tính và đợt cấp của viêm phổi mạn tính (do Streptococcus pneumoniae, Haemophilus influenzae (kể cả chủng tiết ẞ- lactamase) và Moraxella catarrhalis (kể cả chủng tiết ẞ- lactamase)). 
 - Nhiễm khuẩn da và cấu trúc da không biến chứng: do Staphylococcus aureus (kể cả chủng tiết penicillinase) và Streptococcus pyogenes.`,
+        category: "Thuốc kháng sinh",
     },
     {
         id: 7,
@@ -83,6 +89,7 @@ Nhiễm khuẩn da và cấu trúc da`,
         description:
             "Bộ ELISA Bordier Aspergillus fumigatus được dùng để phát hiện định lượng kháng thể IgG chống lai Aspergillus fumigatus trong huyết thanh người.",
         descriptionDetail: `Bộ ELISA Bordier Aspergillus fumigatus được dùng để phát hiện định lượng kháng thể IgG chống lai Aspergillus fumigatus trong huyết thanh người. Serology là một trợ giúp chẩn đoán và không được sử dụng như là phương pháp chẩn đoán duy nhất. Xét nghiệm này cũng nhằm theo dõi những bệnh nhân có nguy cơ bị nhiễm aspergillosis.`,
+        category: "Vật tư y tế",
     },
     {
         id: 8,
@@ -95,6 +102,7 @@ Dự phòng biến cố tim mạch`,
 - Dự phòng biến cố tim mạch tiên phát: Giảm tỷ lệ tử vong và tỷ lệ mắc bệnh tim mạch ở người bệnh tăng cholesterol máu vừa hoặc nặng và có nguy cơ cao xảy ra biến cố tim mạch lần đầu, kết hợp với điều chỉnh chế độ ăn. 
 - Dự phòng biến cố tim mạch thứ phát: Giảm tỷ lệ tử vong do tim mạch và tỷ lệ tái phát ở người bệnh có tiền sử nhồi máu cơ tim hoặc đau thắt ngực không ổn định kèm theo tăng hay không tăng cholesterol máu. 
 - Giảm lipid máu ở những người được ghép tạng đang dùng thuốc chống thải ghép.`,
+        category: "Thuốc trị mỡ máu",
     },
     {
         id: 9,
@@ -105,6 +113,7 @@ Dự phòng biến cố tim mạch`,
  Điều trị trong tăng amoniac máu do rối loạn chu trình urê.`,
         descriptionDetail: `Điều trị hỗ trợ trong rối loạn khó tiêu, trong suy nhược chức năng. 
 - Điều trị trong tăng amoniac máu do rối loạn chu trình urê.`,
+        category: "Thuốc tiêu hoá",
     },
     {
         id: 10,
@@ -117,6 +126,7 @@ Dự phòng biến cố tim mạch`,
 - Rối loạn chức năng não: khó nhớ, chóng mặt, ù tai, nhức đầu và thay đổi xúc cảm kèm theo lo lắng.
 - Giảm thính lực (điều trị hỗ trợ) do hội chứng cổ. 
 - Rối loạn tuần hoàn động mạch ngoại biên với sự bảo tồn tuần hoàn nguyên vẹn (khập khiểng gián cách).`,
+        category: "Thuốc tiêm chích",
     },
     {
         id: 11,
@@ -130,6 +140,7 @@ Phòng và điều trị hỗ trợ xơ gan, ung thư gan.`,
 - Bảo vệ tế bào gan và phục hồi chức năng gan cho những người uống rượu, bia, bị ngộ độc thực phẩm, hóa chất. 
 - Những người đang sử dụng thuốc có hại tới tế bào gan như thuốc điều trị bệnh lao, ung thư, đái tháo đường, các thuốc tác động lên thần kinh, thuốc chống viêm không steroid... 
 - Phòng và điều trị hỗ trợ xơ gan, ung thư gan.`,
+        category: "Thuốc trị bệnh gan",
     },
     {
         id: 12,
@@ -141,6 +152,7 @@ Phòng và điều trị hỗ trợ xơ gan, ung thư gan.`,
         descriptionDetail: `- Bổ sung acid amin, vitamin và khoáng chất mà cơ thể thiếu hụt do khẩu phần ăn không cung cấp đủ.
 - Hỗ trợ tăng cường sức khỏe, tăng sức đề kháng của cơ thể. 
 - Đóng vai trò trong sự hình thành và phát triển chiều cao, trí tuệ của trẻ nhỏ một cách toàn diện.`,
+        category: "Siro bổ",
     },
     {
         id: 13,
@@ -152,6 +164,7 @@ Phòng và điều trị hỗ trợ xơ gan, ung thư gan.`,
         descriptionDetail: `- Bổ sung acid amin, vitamin và khoáng chất mà cơ thể thiếu hụt do khẩu phần ăn không cung cấp đủ.
 - Hỗ trợ tăng cường sức khỏe, tăng sức đề kháng của cơ thể. 
 - Đóng vai trò trong sự hình thành và phát triển chiều cao, trí tuệ của trẻ nhỏ một cách toàn diện.`,
+        category: "Siro bổ",
     },
     {
         id: 14,
@@ -163,6 +176,7 @@ Phòng và điều trị hỗ trợ xơ gan, ung thư gan.`,
         descriptionDetail: `- Bổ sung acid amin, vitamin và khoáng chất mà cơ thể thiếu hụt do khẩu phần ăn không cung cấp đủ.
 - Hỗ trợ tăng cường sức khỏe, tăng sức đề kháng của cơ thể. 
 - Đóng vai trò trong sự hình thành và phát triển chiều cao, trí tuệ của trẻ nhỏ một cách toàn diện.`,
+        category: "Thuốc hướng tâm thần",
     },
     {
         id: 15,
@@ -170,8 +184,8 @@ Phòng và điều trị hỗ trợ xơ gan, ung thư gan.`,
         brand: "Polfarmex S.A",
         image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1729752798/polcalmex.webp",
         description: `Phòng và điều trị tình trạng thiếu calci.`,
-        descriptionDetail: `Phòng và điều trị tình trạng thiếu calci.
-`,
+        descriptionDetail: `Phòng và điều trị tình trạng thiếu calci.`,
+        category: "Thuốc xương khớp",
     },
     {
         id: 16,
@@ -181,6 +195,7 @@ Phòng và điều trị hỗ trợ xơ gan, ung thư gan.`,
         description:
             "Điều trị: nhiễm khuẩn đường hô hấp dưới, nhiễm khuẩn đường niệu, bệnh lậu không biến chứng, nhiễm khuẩn trong ổ bụng, nhiễm khuẩn xương, viêm màng não,…",
         descriptionDetail: `Điều trị các bệnh nhiễm khuẩn do các vi khuẩn nhạy cảm với ceftizoxim như: nhiễm khuẩn đường hô hấp dưới, nhiễm khuẩn đường niệu, bệnh lậu không biến chứng, viêm vùng chậu, nhiễm khuẩn huyết, nhiễm khuẩn trong ổ bụng, nhiễm khuẩn xương, khớp, nhiễm khuẩn da và cấu trúc da, viêm màng não.`,
+        category: "Thuốc kháng sinh",
     },
 ] as Product[];
 
@@ -192,3 +207,4 @@ export const getProductById = async (
     getProducts().then((products) =>
         products.find((product) => product.id === id)
     );
+export type { Product };
