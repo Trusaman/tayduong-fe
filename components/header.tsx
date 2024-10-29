@@ -36,7 +36,7 @@ export default function Component() {
                                     >
                                         <Link
                                             href={`/${item.toLowerCase()}`}
-                                            className="text-base sm:text-lg hover:text-primary hover:underline transition-all duration-200"
+                                            className="text-sm sm:text-lg hover:text-primary hover:underline transition-all duration-200"
                                         >
                                             {t(item)}
                                         </Link>
