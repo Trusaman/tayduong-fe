@@ -72,9 +72,9 @@ export default function Footer() {
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1633.8262493288269!2d105.74137657932731!3d21.029422908829666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455001208ede3%3A0xb81c678d9df17d9f!2zQ8O0bmcgdHkgY-G7lSBwaOG6p24gWSBkxrDhu6NjIFTDonkgRMawxqFuZw!5e1!3m2!1sen!2sus!4v1751267926845!5m2!1sen!2sus"
                                 width="100%"
                                 height="100%"
-                                style={{ border: 0 }}
+                                className="border-0"
                                 allowFullScreen
-                                loading="lazy"
+                                title="Company Location Map"
                                 referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>
                             <Link
