@@ -3,10 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Facebook } from "lucide-react";
 import { Product } from "@/api/types";
+import { useTranslations } from "next-intl";
 
 export const dynamic = "force-dynamic";
 
 export default function ProductCard({ product }: { product: Product }) {
+    const t = useTranslations("ProductCard");
+
     return (
         <div className="max-w-7xl mx-auto p-6 sm:p-8">
             <div className="bg-white rounded-3xl shadow-strong overflow-hidden border border-gray-100">
@@ -37,7 +40,7 @@ export default function ProductCard({ product }: { product: Product }) {
                                 {product.name}
                             </h1>
                             <p className="text-body text-red-600 font-medium mb-6">
-                                Hãng sản xuất: {product.brand}
+                                {t("Manufacturer")}: {product.brand}
                             </p>
                         </div>
 
@@ -49,7 +52,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
                         <div className="mb-8">
                             <h2 className="text-heading-sm text-gray-900 mb-4">
-                                Liên hệ tư vấn
+                                {t("ContactConsultation")}
                             </h2>
                             <div className="flex items-center gap-3 mb-6">
                                 <Button
@@ -71,15 +74,14 @@ export default function ProductCard({ product }: { product: Product }) {
                                 size="lg"
                                 className="w-full justify-center"
                             >
-                                📞 Gọi (+84) 0247.107.9966 để được tư vấn miễn
-                                phí
+                                {t("CallForConsultation")}
                             </Button>
                             <Button
                                 variant="outline"
                                 size="lg"
                                 className="w-full justify-center"
                             >
-                                📧 Gửi yêu cầu tư vấn
+                                {t("SendConsultationRequest")}
                             </Button>
                         </div>
                     </div>
@@ -93,13 +95,13 @@ export default function ProductCard({ product }: { product: Product }) {
                             value="description"
                             className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-soft transition-all"
                         >
-                            📋 Thông tin chi tiết
+                            {t("ProductInfo")}
                         </TabsTrigger>
                         <TabsTrigger
                             value="details"
                             className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-soft transition-all"
                         >
-                            ⚙️ Thông số kỹ thuật
+                            {t("TechnicalSpecs")}
                         </TabsTrigger>
                     </TabsList>
 
@@ -108,7 +110,7 @@ export default function ProductCard({ product }: { product: Product }) {
                             <div className="space-y-6">
                                 <div>
                                     <h3 className="text-heading-sm text-gray-900 mb-3">
-                                        Công dụng
+                                        {t("Usage")}
                                     </h3>
                                     <div className="bg-blue-50 rounded-xl p-4">
                                         <p className="text-body text-gray-700">
@@ -119,31 +121,29 @@ export default function ProductCard({ product }: { product: Product }) {
 
                                 <div>
                                     <h3 className="text-heading-sm text-gray-900 mb-3">
-                                        Bảo quản
+                                        {t("Storage")}
                                     </h3>
                                     <div className="bg-green-50 rounded-xl p-4">
                                         <p className="text-body text-gray-700">
-                                            Nơi khô mát, tránh ánh sáng trực
-                                            tiếp
+                                            {t("StorageInstructions")}
                                         </p>
                                     </div>
                                 </div>
 
                                 <div>
                                     <h3 className="text-heading-sm text-gray-900 mb-3">
-                                        Hạn sử dụng
+                                        {t("ExpiryDate")}
                                     </h3>
                                     <div className="bg-amber-50 rounded-xl p-4">
                                         <p className="text-body text-gray-700">
-                                            3 năm kể từ ngày sản xuất
+                                            {t("ExpiryInfo")}
                                         </p>
                                     </div>
                                 </div>
 
                                 <div className="bg-red-50 border border-red-200 rounded-xl p-4">
                                     <p className="text-body-sm text-red-700 italic">
-                                        ⚠️ Đọc kỹ hướng dẫn sử dụng trước khi
-                                        dùng
+                                        {t("UsageWarning")}
                                     </p>
                                 </div>
                             </div>
@@ -153,12 +153,12 @@ export default function ProductCard({ product }: { product: Product }) {
                     <TabsContent value="details" className="mt-6">
                         <div className="bg-white rounded-2xl p-8 shadow-soft border border-gray-100">
                             <h3 className="text-heading-sm text-gray-900 mb-6">
-                                Thông số kỹ thuật
+                                {t("TechnicalSpecs")}
                             </h3>
                             <div className="space-y-4">
                                 <div className="flex justify-between items-center py-4 border-b border-gray-100">
                                     <span className="text-body text-gray-600">
-                                        Hãng sản xuất:
+                                        {t("Manufacturer")}:
                                     </span>
                                     <span className="text-body font-medium text-gray-900">
                                         {product.brand}
@@ -166,7 +166,7 @@ export default function ProductCard({ product }: { product: Product }) {
                                 </div>
                                 <div className="flex justify-between items-center py-4 border-b border-gray-100">
                                     <span className="text-body text-gray-600">
-                                        Tiêu chuẩn:
+                                        {t("Standard")}:
                                     </span>
                                     <span className="text-body font-medium text-gray-900">
                                         TCCS
@@ -174,37 +174,36 @@ export default function ProductCard({ product }: { product: Product }) {
                                 </div>
                                 <div className="flex justify-between items-center py-4 border-b border-gray-100">
                                     <span className="text-body text-gray-600">
-                                        Xuất xứ:
+                                        {t("Origin")}:
                                     </span>
                                     <span className="text-body font-medium text-gray-900">
-                                        Việt Nam
+                                        {t("Vietnam")}
                                     </span>
                                 </div>
                                 <div className="flex justify-between items-center py-4 border-b border-gray-100">
                                     <span className="text-body text-gray-600">
-                                        Chứng nhận chất lượng:
+                                        {t("QualityCertification")}:
                                     </span>
                                     <span className="text-body font-medium text-gray-900">
-                                        ISO 9001:2015
+                                        {t("ISOCertification")}
                                     </span>
                                 </div>
                                 <div className="flex justify-between items-center py-4">
                                     <span className="text-body text-gray-600">
-                                        Bảo hành:
+                                        {t("Warranty")}:
                                     </span>
                                     <span className="text-body font-medium text-gray-900">
-                                        Theo quy định nhà sản xuất
+                                        {t("WarrantyInfo")}
                                     </span>
                                 </div>
                             </div>
 
                             <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-teal-50 rounded-xl border border-blue-100">
                                 <h4 className="text-body font-semibold text-gray-900 mb-2">
-                                    Sản xuất tại nhà máy của {product.brand}
+                                    {t("ManufacturedAt")} {product.brand}
                                 </h4>
                                 <p className="text-body-sm text-gray-600">
-                                    Đảm bảo chất lượng theo tiêu chuẩn quốc tế
-                                    với quy trình sản xuất hiện đại
+                                    {t("QualityAssurance")}
                                 </p>
                             </div>
                         </div>

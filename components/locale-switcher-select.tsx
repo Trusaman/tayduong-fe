@@ -13,6 +13,7 @@ type Props = {
 export default function LocaleSwitcherSelect({
     children,
     defaultValue,
+    label,
 }: Props) {
     const router = useRouter();
     const [isPending, startTransition] = useTransition();
@@ -33,13 +34,22 @@ export default function LocaleSwitcherSelect({
     }
 
     return (
-        <select
-            className="ml-4 p-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            defaultValue={defaultValue}
-            disabled={isPending}
-            onChange={onSelectChange}
-        >
-            {children}
-        </select>
+        <div className="relative">
+            <select
+                className="ml-4 p-2 pr-8 text-sm bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                defaultValue={defaultValue}
+                disabled={isPending}
+                onChange={onSelectChange}
+                aria-label={label}
+                title={label}
+            >
+                {children}
+            </select>
+            {isPending && (
+                <div className="absolute right-2 top-1/2 transform -translate-y-1/2">
+                    <div className="animate-spin h-4 w-4 border-2 border-blue-500 border-t-transparent rounded-full"></div>
+                </div>
+            )}
+        </div>
     );
 }

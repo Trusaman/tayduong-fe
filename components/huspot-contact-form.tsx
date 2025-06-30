@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
+import { useTranslations } from "next-intl";
 
 declare global {
     interface Window {
@@ -22,6 +23,7 @@ interface HubSpotFormConfig {
 
 export default function StyledHubSpotForm() {
     const [isLoaded, setIsLoaded] = useState(false);
+    const t = useTranslations("ContactPage");
 
     useEffect(() => {
         const script = document.createElement("script");
@@ -49,8 +51,8 @@ export default function StyledHubSpotForm() {
     return (
         <div className="min-h-screen bg-sky-400 flex items-center justify-center p-4">
             <div className="w-full max-w-2xl bg-sky-400 rounded-lg shadow-lg p-6">
-                <h1 className="text-3xl md:text-4xl font-bold text-navy-900 mb-6">
-                    Contact us / Liên hệ với chúng tôi
+                <h1 className="text-heading-lg font-bold text-navy-900 mb-6">
+                    {t("Title")}
                 </h1>
                 {!isLoaded && (
                     <div className="space-y-4">
