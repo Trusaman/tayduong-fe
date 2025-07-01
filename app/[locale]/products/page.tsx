@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import ProductList from "./product-list";
 import { getProducts } from "@/api/products";
 import { useTranslations } from "next-intl";
+import { Product } from "@/api/types";
 
 export default async function ProductPage() {
     const products = await getProducts();
@@ -23,7 +24,7 @@ export default async function ProductPage() {
     );
 }
 
-function ProductPageContent({ products }: { products: any[] }) {
+function ProductPageContent({ products }: { products: Product[] }) {
     const t = useTranslations("ProductsPage");
 
     return (
