@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import Header from "./header";
 import Footer from "./footer";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const backgroundImages = [
     "https://res.cloudinary.com/dzyeanw6v/image/upload/v1730085522/hfz4jjbcz7joh9rkpz0z.jpg",
@@ -21,6 +22,8 @@ const backgroundImages = [
 
 export default function ResponsivePharmacyHome() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const t = useTranslations("HomePage");
 
     useEffect(() => {
         const style = document.createElement("style");
@@ -90,23 +93,20 @@ export default function ResponsivePharmacyHome() {
                     <div className="max-w-7xl mx-auto relative z-10 px-6 sm:px-8 py-24 sm:py-32">
                         <div className="flex flex-col items-center sm:items-start justify-center text-center sm:text-left">
                             <div className="mb-6">
-                                <span className="inline-block px-4 py-2 bg-gradient-medical text-white text-sm font-semibold rounded-full shadow-soft mb-4">
-                                    🏥 Trusted Healthcare Partner
+                                <span className="inline-block px-4 py-2 bg-gradient-medical text-white text-lg font-semibold rounded-full shadow-soft mb-4">
+                                    🏥 {t("Subtitle")}
                                 </span>
                             </div>
 
                             <h1 className="text-display-xl sm:text-display-lg md:text-display-xl text-gray-900 mb-6 max-w-4xl">
-                                Your Health, Our{" "}
                                 <span className="bg-gradient-to-r from-blue-600 via-teal-600 to-blue-700 bg-clip-text text-transparent">
-                                    Priority
+                                    {/* Your Health, Our Priority */}
+                                    {t("HeroTitle")}
                                 </span>
                             </h1>
 
-                            <p className="text-body-xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
-                                Providing quality healthcare solutions with
-                                cutting-edge pharmaceutical innovations,
-                                ensuring your well-being is at the forefront of
-                                our mission.
+                            <p className="text-body-xl text-gray-600 mb-10 max-w-3xl leading-relaxed text-justify">
+                                {t("HeroSubtitle")}
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
@@ -116,7 +116,7 @@ export default function ResponsivePharmacyHome() {
                                         size="xl"
                                         className="min-w-[200px]"
                                     >
-                                        Explore Our Services
+                                        {t("ContactConsultation")}
                                     </Button>
                                 </Link>
                                 <Link href="/products">
@@ -125,7 +125,7 @@ export default function ResponsivePharmacyHome() {
                                         size="xl"
                                         className="min-w-[200px]"
                                     >
-                                        View Products
+                                        {t("ViewProducts")}
                                     </Button>
                                 </Link>
                             </div>
@@ -148,42 +148,7 @@ export default function ResponsivePharmacyHome() {
                         </div>
                     </div>
                 </section>
-                {/* <section className="relative bg-cover bg-center min-h-[calc(100vh-72px)] sm:min-h-[calc(100vh-64px)] py-24 sm:py-32 px-4 sm:px-6 flex items-center overflow-hidden">
-                    <div
-                        className="absolute inset-0 bg-cover bg-center"
-                        style={{
-                            backgroundImage:
-                                // "url('https://res.cloudinary.com/dzyeanw6v/image/upload/v1729658542/hsvcf23k7tcsipontgxt.webp')",
-                                "url('https://res.cloudinary.com/dzyeanw6v/image/upload/v1730085522/hfz4jjbcz7joh9rkpz0z.jpg')",
-                            animation:
-                                "zoomInBackground 40s ease-in-out infinite",
-                            filter: "brightness(1.4)",
-                        }}
-                    ></div>
-                    <div className="absolute inset-0 bg-black opacity-30"></div>
-                    <div className="max-w-7xl mx-auto relative z-10 flex flex-col items-center sm:items-start justify-center h-full text-gray-800">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center sm:text-left text-white leading-tight">
-                            Your Health, Our Priority
-                        </h1>
-                        <p className="text-xl sm:text-2xl mb-10 text-center sm:text-left text-white max-w-3xl">
-                            Providing quality healthcare solutions for a better
-                            tomorrow, ensuring your well-being is at the
-                            forefront of our mission.
-                        </p>
-                        <div className="flex justify-center sm:justify-start">
-                            <Link href={"/contact"}>
-                                <Button
-                                    size="lg"
-                                    className="text-xl px-10 py-6 bg-white text-[#008080] hover:bg-gray-100 rounded-full transition-all duration-300 transform hover:scale-105"
-                                >
-                                    Explore Our Services
-                                </Button>
-                            </Link>
-                        </div>
-                    </div>
-                </section> */}
-
-                <section className="py-24 sm:py-32 px-6 sm:px-8 bg-gradient-to-r from-gray-50 to-blue-50">
+                {/* <section className="py-24 sm:py-32 px-6 sm:px-8 bg-gradient-to-r from-gray-50 to-blue-50">
                     <div className="max-w-6xl mx-auto">
                         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
                             <div className="lg:w-2/3">
@@ -193,21 +158,13 @@ export default function ResponsivePharmacyHome() {
                                     </span>
                                 </div>
                                 <h2 className="text-heading-xl text-gray-900 mb-6">
-                                    Transforming Healthcare Worldwide
+                                    {t("GlobalImpactTitle")}
                                 </h2>
-                                <p className="text-body-lg text-gray-600 mb-6 leading-relaxed">
-                                    As a leading pharmaceutical company,
-                                    we&apos;re committed to improving global
-                                    health outcomes. Our extensive range of
-                                    medications and health products contributes
-                                    significantly to treating various conditions
-                                    worldwide.
+                                <p className="text-body-lg text-gray-600 mb-6 leading-relaxed text-justify">
+                                    {t("GlobalImpactContent")}
                                 </p>
                                 <p className="text-body text-gray-600 leading-relaxed">
-                                    With a focus on accessibility and
-                                    affordability, we&apos;re making a tangible
-                                    difference in people&apos;s lives every day
-                                    through innovative solutions.
+                                    {t("GlobalImpactSubContent")}
                                 </p>
                             </div>
                             <div className="lg:w-1/3 flex justify-center">
@@ -223,35 +180,27 @@ export default function ResponsivePharmacyHome() {
                                             Annual Impact
                                         </span>
                                     </div>
-                                    {/* Decorative elements */}
                                     <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-200 rounded-full opacity-60"></div>
                                     <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-teal-200 rounded-full opacity-40"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section className="bg-cyan-700 text-primary-foreground py-24 sm:py-32 px-4 sm:px-6">
                     <div className="max-w-6xl mx-auto">
                         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-                            Pharmaceutical Challenges
+                            {t("ChallengeTitle")}
                         </h2>
-                        <p className="mb-4">
-                            Effective medication management is challenging,
-                            partly because patient symptoms can be nonspecific
-                            or often overlap between different conditions.
-                            Traditional approaches to medication dispensing are
-                            characterized by long wait times and potential for
-                            errors. This means patients are often treated with a
-                            one-size-fits-all approach, leading to suboptimal
-                            outcomes and increasing harmful resistance to
-                            certain drugs.
+                        <p className="mb-4 text-justify">
+                            {t("ChallengeContent")}
                         </p>
                     </div>
                 </section>
 
-                <section className="bg-background py-24 sm:py-32 px-4 sm:px-6">
+                {/* Chưa cần đến */}
+                {/* <section className="bg-background py-24 sm:py-32 px-4 sm:px-6">
                     <div className="max-w-6xl mx-auto">
                         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
                             Pharmaceutical Advances
@@ -267,21 +216,21 @@ export default function ResponsivePharmacyHome() {
                             for different settings and individual patient needs.
                         </p>
                     </div>
-                </section>
+                </section> */}
 
-                <section className="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 py-24 sm:py-32 px-6 sm:px-8">
+                {/* <section className="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 py-24 sm:py-32 px-6 sm:px-8">
                     <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-16">
                             <span className="inline-block px-4 py-2 bg-amber-100 text-amber-700 text-sm font-medium rounded-full mb-4">
-                                Clinical Excellence
+                                {t("ClinicalExcellenceTitle")}
                             </span>
                             <h2 className="text-heading-xl text-gray-900 mb-6">
-                                Patient-Centered Healthcare Benefits
+          
+                                {t("ClinicalExcellenceTitleMain")}
                             </h2>
                             <p className="text-body-lg text-gray-600 max-w-3xl mx-auto">
-                                Our comprehensive approach to pharmaceutical
-                                care delivers measurable improvements in patient
-                                outcomes and healthcare efficiency.
+       
+                                {t("ClinicalExcellenceContent")}
                             </p>
                         </div>
 
@@ -343,7 +292,7 @@ export default function ResponsivePharmacyHome() {
                             ))}
                         </div>
                     </div>
-                </section>
+                </section> */}
             </main>
 
             <Footer />
