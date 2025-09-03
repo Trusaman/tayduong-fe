@@ -58,7 +58,7 @@ function PartnerLogo({
                         width={imgSize}
                         height={imgSize}
                         className="object-contain"
-                        onLoadingComplete={() => setIsLoading(false)}
+                        onLoad={() => setIsLoading(false)}
                         onError={() => {
                             setHasError(true);
                             setIsLoading(false);
