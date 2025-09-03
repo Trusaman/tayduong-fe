@@ -10,7 +10,7 @@ export default function Component() {
 
     return (
         <header className="bg-white sticky top-0 left-0 right-0 z-50">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 py-2 sm:py-4">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 sm:py-4">
                 <div className="flex flex-col sm:flex-row justify-between items-center text-cyan-900">
                     <div className="flex items-center mb-2 sm:mb-0">
                         <Image
@@ -33,6 +33,7 @@ export default function Component() {
                                 "Products",
                                 "Customers",
                                 "About",
+                                "News",
                                 "Contact",
                             ].map((item) => (
                                 <li

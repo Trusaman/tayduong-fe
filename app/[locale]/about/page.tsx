@@ -17,7 +17,7 @@ export default function AboutUs() {
                         <div className="relative h-[300px] md:h-[400px]">
                             <Image
                                 // src="https://res.cloudinary.com/dzyeanw6v/image/upload/v1729763801/about-us-1.jpg"
-                                src="/van-phong-1.jpg"
+                                src="/van-phong-5.png"
                                 alt="DNA Strand"
                                 layout="fill"
                                 objectFit="cover"
@@ -30,32 +30,16 @@ export default function AboutUs() {
                                 {t("Title")}
                             </h3>
                             <h2 className="text-3xl font-bold mb-4">
-                                TAY DUONG PHARMA JSC
+                                {t("CompanyName")}
                             </h2>
-                            <p className="mb-4">
-                                TAY DUONG PHARMA Joint Stock Company was
-                                established in 2018. We specialize in providing
-                                solutions for clinical diagnosis, biological
-                                research and pharmaceutical industry.
-                            </p>
-                            <p className="mb-6">
-                                To accomplish the above goals, we choose to
-                                become a distributor of reputable manufacturers
-                                in the world for quality products with
-                                continuous innovation. Direct support from the
-                                manufacturer combined with the company&apos;s
-                                professional staff brings customers
-                                technological solutions that meet their needs,
-                                thereby contributing to the development of
-                                science, technology, and the economy of the
-                                country.
-                            </p>
+                            <p className="mb-4">{t("TitleMain")}</p>
+                            <p className="mb-6">{t("TitleSub")}</p>
                             <Link href="/products">
                                 <Button
                                     variant="outline"
                                     className="hover:bg-slate-600 hover:text-white border-slate-600 pt-2"
                                 >
-                                    OUR PRODUCTS
+                                    {t("OurProducts")}
                                 </Button>
                             </Link>
                         </div>
@@ -65,23 +49,18 @@ export default function AboutUs() {
                         <div className="space-y-8">
                             <div>
                                 <h3 className="text-2xl font-semibold mb-2">
-                                    Mission
+                                    {t("Mission")}
                                 </h3>
                                 <p className="text-gray-600">
-                                    Providing advanced scientific and
-                                    technological solutions applied in clinical
-                                    diagnosis and biotechnology, thereby making
-                                    practical contributions to a better life.
+                                    {t("MissionDescription")}
                                 </p>
                             </div>
                             <div>
                                 <h3 className="text-2xl font-semibold mb-2">
-                                    Vision
+                                    {t("Vision")}
                                 </h3>
                                 <p className="text-gray-600">
-                                    Become a leading enterprise in the field of
-                                    clinical testing, biotechnology applications
-                                    and pharmacy.
+                                    {t("VisionDescription")}
                                 </p>
                             </div>
                         </div>
@@ -89,7 +68,7 @@ export default function AboutUs() {
                         <div className="relative h-[300px] md:h-[400px]">
                             <Image
                                 // src="https://res.cloudinary.com/dzyeanw6v/image/upload/v1729763808/about-us-2.jpg"
-                                src="/van-phong-4.jpg"
+                                src="/giao-hang-3.png"
                                 alt="Handshake with World Map"
                                 layout="fill"
                                 objectFit="cover"
@@ -100,19 +79,18 @@ export default function AboutUs() {
                         <div className="space-y-8">
                             <div>
                                 <h3 className="text-2xl font-semibold mb-2">
-                                    Core values
+                                    {t("CoreValues")}
                                 </h3>
                                 <p className="text-gray-600">
-                                    Speed - Trust - Cooperation
+                                    {t("CoreValuesDescription")}
                                 </p>
                             </div>
                             <div>
                                 <h3 className="text-2xl font-semibold mb-2">
-                                    Business philosophy
+                                    {t("BusinessPhilosophy")}
                                 </h3>
                                 <p className="text-gray-600">
-                                    Dedicated to customers - Responsible to
-                                    society
+                                    {t("BusinessPhilosophyDescription")}
                                 </p>
                             </div>
                         </div>

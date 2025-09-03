@@ -38,7 +38,7 @@ function PartnerLogo({
     return (
         <div
             className={
-                "relative mx-auto mb-4 bg-white rounded-full flex items-center justify-center overflow-hidden border border-gray-100 transition-transform duration-300 group-hover:scale-105 group-hover:ring-2 group-hover:ring-blue-100 " +
+                "relative mx-auto mb-4 rounded-full flex items-center justify-center overflow-hidden border border-gray-200 transition-transform duration-300 group-hover:scale-105 group-hover:ring-2 group-hover:ring-blue-100 " +
                 className
             }
             style={{ width: boxSize, height: boxSize }}
@@ -91,7 +91,7 @@ export default function CustomersPage() {
             name: tCustomers("BV108"),
 
             type: "hospital",
-            established: "1956",
+            established: "1951",
             specialties: [
                 "Military Medicine",
                 "Trauma Care",
@@ -106,7 +106,7 @@ export default function CustomersPage() {
             name: tCustomers("DHY"),
 
             type: "hospital",
-            established: "1902",
+            established: "2007",
             specialties: ["Medical Education", "Research", "Clinical Care"],
             partnership: "3+ years",
             imageUrl:
@@ -117,7 +117,7 @@ export default function CustomersPage() {
             name: tCustomers("PTW"),
 
             type: "hospital",
-            established: "1963",
+            established: "1957",
             specialties: [
                 "Pulmonology",
                 "Respiratory Care",
@@ -143,7 +143,7 @@ export default function CustomersPage() {
             name: tCustomers("TMHTW"),
 
             type: "hospital",
-            established: "1967",
+            established: "1969",
             specialties: [
                 "ENT Surgery",
                 "Hearing Disorders",
@@ -178,7 +178,7 @@ export default function CustomersPage() {
             icon: Building2,
             value: "100+",
             label: t("TrustedBy"),
-            description: "healthcare institutions",
+            description: t("HealthcareInstitutions"),
         },
         // {
         //     icon: Users,
@@ -188,7 +188,7 @@ export default function CustomersPage() {
         // },
         {
             icon: Award,
-            value: "500+",
+            value: "100+",
             label: t("ProductsSupplied"),
             description: "medical products",
         },
@@ -291,8 +291,7 @@ export default function CustomersPage() {
                                 {t("HospitalPartners")}
                             </h2>
                             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                                Leading healthcare institutions that trust our
-                                products and services
+                                {t("HospitalPartnersDescription")}
                             </p>
                         </div>
 
@@ -315,15 +314,15 @@ export default function CustomersPage() {
                                             {partner.name}
                                         </CardTitle>
                                         <CardDescription className="text-sm text-gray-500">
-                                            Established {partner.established} •{" "}
-                                            {partner.partnership}
+                                            {t("Established")}{" "}
+                                            {partner.established}
                                         </CardDescription>
                                     </CardHeader>
                                     <CardContent className="pt-0">
                                         <div className="space-y-3">
                                             <div>
                                                 <h4 className="text-sm font-medium text-gray-700 mb-2">
-                                                    Specialties:
+                                                    {t("Specialties")}:
                                                 </h4>
                                                 <div className="flex flex-wrap gap-1">
                                                     {partner.specialties.map(
@@ -354,8 +353,7 @@ export default function CustomersPage() {
                                 {t("PharmaceuticalPartners")}
                             </h2>
                             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                                Pharmaceutical companies and retail chains we
-                                proudly serve
+                                {t("PharmaceuticalPartnersDescription")}
                             </p>
                         </div>
 
@@ -380,15 +378,15 @@ export default function CustomersPage() {
                                             {partner.name}
                                         </CardTitle>
                                         <CardDescription className="text-sm text-gray-500">
-                                            Established {partner.established} •{" "}
-                                            {partner.partnership}
+                                            {t("Established")}{" "}
+                                            {partner.established}
                                         </CardDescription>
                                     </CardHeader>
                                     <CardContent className="pt-0">
                                         <div className="space-y-3">
                                             <div>
                                                 <h4 className="text-sm font-medium text-gray-700 mb-2">
-                                                    Specialties:
+                                                    {t("Specialties")}:
                                                 </h4>
                                                 <div className="flex flex-wrap gap-1">
                                                     {partner.specialties.map(
@@ -419,8 +417,7 @@ export default function CustomersPage() {
                                 {t("PartnershipBenefits")}
                             </h2>
                             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                                Why leading healthcare institutions choose us as
-                                their trusted partner
+                                {t("PartnershipBenefitsReason")}
                             </p>
                         </div>
 
@@ -498,9 +495,7 @@ export default function CustomersPage() {
                             {t("BecomePartner")}
                         </h2>
                         <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                            Join our network of trusted healthcare partners and
-                            experience the difference of working with a reliable
-                            pharmaceutical distributor.
+                            {t("BecomePartnerReason")}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact">

@@ -4,6 +4,7 @@
         "Products": "Products",
         "Customers": "Customers",
         "About": "About",
+        "News": "News",
         "Contact": "Contact",
         "Company": "Tay Duong Pharma JSC"
     },
@@ -55,6 +56,10 @@
         "CompetitivePrice": "Competitive Pricing",
         "CompetitivePriceDescription": "Committed to providing the best prices with superior quality"
     },
+    "NewsPage": {
+        "Title": "Company News",
+        "Subtitle": "Updates & Events"
+    },
     "ProductsPage": {
         "Title": "Medical Products",
         "FilterBy": "Filter by Category",
@@ -98,9 +103,14 @@
     },
     "AboutPage": {
         "Title": "About Us",
-        "OurStory": "Our Story",
-        "OurMission": "Our Mission",
-        "OurTeam": "Our Team",
+        "CompanyName": "Tay Duong Pharma JSC",
+        "TitleMain": "TAY DUONG PHARMA Joint Stock Company was established in 2018. We specialize in providing solutions for clinical diagnosis, biological research and pharmaceutical industry.",
+        "TitleSub": "To accomplish the above goals, we choose to become a distributor of reputable manufacturers in the world for quality products with continuous innovation. Direct support from the manufacturer combined with the company&apos;s professional staff brings customers technological solutions that meet their needs, thereby contributing to the development of science, technology, and the economy of the country.",
+        "OurProducts": "OUR PRODUCTS",
+        "Mission": "Mission",
+        "MissionDescription": "Delivering high-quality pharmaceuticals and medical equipment, thereby making meaningful contributions to a better life.",
+        "Vision": "Vision",
+        "VisionDescription": "To become a leading enterprise in the field of medical equipment and pharmaceuticals.",
         "CoreValues": "Core Values",
         "CoreValuesDescription": "Speed - Trust - Cooperation",
         "BusinessPhilosophy": "Business Philosophy",
@@ -109,7 +119,10 @@
         "OurCommitment": "Our Commitment",
         "QualityCommitment": "Commitment to the best product and service quality",
         "InnovationCommitment": "Continuous innovation and technology improvement",
-        "CustomerCommitment": "Putting customer interests first"
+        "CustomerCommitment": "Putting customer interests first",
+        "OurStory": "Our Story",
+        "OurMission": "Our Mission",
+        "OurTeam": "Our Team"
     },
     "ContactPage": {
         "Title": "Contact Us",
@@ -169,14 +182,18 @@
         "Subtitle": "Trusted partnerships in healthcare excellence",
         "Description": "We are proud to serve leading healthcare institutions across Vietnam, providing high-quality pharmaceutical products and medical devices that support exceptional patient care.",
         "HospitalPartners": "Hospital Partners",
+        "HospitalPartnersDescription": "Leading healthcare institutions that trust our products and services",
         "PharmaceuticalPartners": "Pharmaceutical Partners",
+        "PharmaceuticalPartnersDescription": "Pharmaceutical companies and retail chains we proudly serve",
         "TrustedBy": "Trusted by",
         "YearsPartnership": "years of partnership",
         "PatientsServed": "patients served annually",
         "ProductsSupplied": "products supplied",
         "ContactForPartnership": "Contact for Partnership",
         "BecomePartner": "Become Our Partner",
+        "BecomePartnerReason": "Join our network of trusted healthcare partners and experience the difference of working with a reliable pharmaceutical distributor.",
         "PartnershipBenefits": "Partnership Benefits",
+        "PartnershipBenefitsReason": "Why leading healthcare institutions choose us as their trusted partner",
         "QualityProducts": "High-Quality Products",
         "QualityProductsDesc": "Access to premium pharmaceutical products and medical devices from trusted manufacturers",
         "ReliableSupply": "Reliable Supply Chain",
@@ -192,6 +209,9 @@
         "ViewAllPartners": "View All Partners",
         "PartnershipInquiry": "Partnership Inquiry",
         "GetInTouch": "Get in Touch",
-        "LearnMore": "Learn More"
+        "LearnMore": "Learn More",
+        "Established": "Established",
+        "HealthcareInstitutions": "healthcare institutions",
+        "Specialties": "Specialties"
     }
 }

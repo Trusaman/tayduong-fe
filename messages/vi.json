@@ -4,8 +4,9 @@
         "Products": "Sản phẩm",
         "Customers": "Khách hàng",
         "About": "Giới thiệu",
+        "News": "Tin tức & Sự kiện",
         "Contact": "Liên hệ",
-        "Company": "CTCP Y dược Tây Dương"
+        "Company": "CTCP Y DƯỢC TÂY DƯƠNG"
     },
     "Footer": {
         "Company": "CTCP Y dược Tây Dương",
@@ -55,6 +56,10 @@
         "FastDeliveryDescription": "Hệ thống phân phối toàn quốc đảm bảo giao hàng nhanh và an toàn",
         "CompetitivePrice": "Giá cả cạnh tranh",
         "CompetitivePriceDescription": "Cam kết mang đến giá tốt nhất với chất lượng vượt trội"
+    },
+    "NewsPage": {
+        "Title": "Tin tức & Sự kiện",
+        "Subtitle": "Cập nhật mới nhất"
     },
     "ProductsPage": {
         "Title": "Sản phẩm y tế",
@@ -110,7 +115,16 @@
         "OurCommitment": "Cam kết của chúng tôi",
         "QualityCommitment": "Cam kết chất lượng sản phẩm và dịch vụ tốt nhất",
         "InnovationCommitment": "Không ngừng đổi mới và cải tiến công nghệ",
-        "CustomerCommitment": "Đặt lợi ích khách hàng lên hàng đầu"
+        "CustomerCommitment": "Đặt lợi ích khách hàng lên hàng đầu",
+
+        "CompanyName": "Công ty cổ phần Y dược Tây Dương",
+        "TitleMain": "Công ty Cổ phần Tây Dương được thành lập năm 2018. Chúng tôi chuyên chuyên phân phối dược phẩm và thiết bị y tế.",
+        "TitleSub": "Để thực hiện mục tiêu trên, chúng tôi lựa chọn trở thành nhà phân phối của các nhà sản xuất uy tín trên thế giới với những sản phẩm chất lượng, không ngừng đổi mới. Sự hỗ trợ trực tiếp từ nhà sản xuất kết hợp với đội ngũ nhân sự chuyên nghiệp của công ty mang đến cho khách hàng những giải pháp công nghệ đáp ứng nhu cầu, qua đó góp phần vào sự phát triển của khoa học, công nghệ và nền kinh tế đất nước.",
+        "OurProducts": "SẢN PHẨM CỦA CHÚNG TÔI",
+        "Mission": "Sứ mệnh",
+        "MissionDescription": "Cung cấp các sản phẩm dược phẩm và thiết bị y tế chất lượng cao, từ đó đóng góp thiết thực cho một cuộc sống tốt đẹp hơn.",
+        "Vision": "Tầm nhìn",
+        "VisionDescription": "Trở thành doanh nghiệp hàng đầu trong lĩnh vực thiết bị y tế và dược phẩm."
     },
     "ContactPage": {
         "Title": "Liên hệ với chúng tôi",
@@ -170,14 +184,18 @@
         "Subtitle": "Đối tác tin cậy trong lĩnh vực chăm sóc sức khỏe",
         "Description": "Chúng tôi tự hào phục vụ các cơ sở y tế hàng đầu trên toàn Việt Nam, cung cấp các sản phẩm dược phẩm và thiết bị y tế chất lượng cao hỗ trợ chăm sóc bệnh nhân xuất sắc.",
         "HospitalPartners": "Đối tác bệnh viện",
+        "HospitalPartnersDescription": "Các cơ sở y tế hàng đầu tin tưởng lựa chọn sản phẩm và dịch vụ của chúng tôi",
         "PharmaceuticalPartners": "Đối tác dược phẩm",
+        "PharmaceuticalPartnersDescription": "Công ty dược phẩm và chuỗi bán lẻ tin tưởng lựa chọn sản phẩm và dịch vụ của chúng tôi",
         "TrustedBy": "Được tin tưởng bởi",
         "YearsPartnership": "năm hợp tác",
         "PatientsServed": "bệnh nhân được phục vụ hàng năm",
         "ProductsSupplied": "sản phẩm được cung cấp",
         "ContactForPartnership": "Liên hệ hợp tác",
         "BecomePartner": "Trở thành đối tác",
+        "BecomePartnerReason": "Hãy gia nhập mạng lưới đối tác y tế tin cậy của chúng tôi và trải nghiệm sự khác biệt khi hợp tác cùng một nhà phân phối uy tín.",
         "PartnershipBenefits": "Lợi ích hợp tác",
+        "PartnershipBenefitsReason": "Các cơ sở y tế hàng đầu lựa chọn chúng tôi làm đối tác tin cậy",
         "QualityProducts": "Sản phẩm chất lượng cao",
         "QualityProductsDesc": "Tiếp cận các sản phẩm dược phẩm và thiết bị y tế cao cấp từ các nhà sản xuất uy tín",
         "ReliableSupply": "Chuỗi cung ứng đáng tin cậy",
@@ -193,6 +211,9 @@
         "ViewAllPartners": "Xem tất cả đối tác",
         "PartnershipInquiry": "Yêu cầu hợp tác",
         "GetInTouch": "Liên hệ ngay",
-        "LearnMore": "Tìm hiểu thêm"
+        "LearnMore": "Tìm hiểu thêm",
+        "Established": "Thành lập",
+        "HealthcareInstitutions": "cơ sở y tế",
+        "Specialties": "Chuyên môn"
     }
 }

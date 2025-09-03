@@ -111,7 +111,12 @@ export default function Footer() {
                             <TwitterIcon className="w-6 h-6" />
                             <span className="sr-only">Twitter</span>
                         </Link>
-                        <Link href="#" className="hover:text-gray-200">
+                        <Link
+                            href="https://www.facebook.com/people/TAY-DUONG-Pharma/100089650221576/"
+                            className="hover:text-gray-200"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <Facebook className="w-6 h-6" />
                             <span className="sr-only">Facebook</span>
                         </Link>
