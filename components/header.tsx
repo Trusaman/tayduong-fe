@@ -28,21 +28,25 @@ export default function Component() {
                     </div>
                     <nav className="w-full sm:w-auto flex items-center justify-between sm:justify-end">
                         <ul className="flex flex-wrap justify-center sm:space-x-6">
-                            {["Home", "Products", "About", "Contact"].map(
-                                (item) => (
-                                    <li
-                                        key={item}
-                                        className="mx-2 sm:mx-0 my-1 sm:my-0"
+                            {[
+                                "Home",
+                                "Products",
+                                "Customers",
+                                "About",
+                                "Contact",
+                            ].map((item) => (
+                                <li
+                                    key={item}
+                                    className="mx-2 sm:mx-0 my-1 sm:my-0"
+                                >
+                                    <Link
+                                        href={`/${item.toLowerCase()}`}
+                                        className="text-sm sm:text-lg hover:text-primary hover:underline transition-all duration-200"
                                     >
-                                        <Link
-                                            href={`/${item.toLowerCase()}`}
-                                            className="text-sm sm:text-lg hover:text-primary hover:underline transition-all duration-200"
-                                        >
-                                            {t(item)}
-                                        </Link>
-                                    </li>
-                                )
-                            )}
+                                        {t(item)}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                         <LocaleSwitcher />
                     </nav>
