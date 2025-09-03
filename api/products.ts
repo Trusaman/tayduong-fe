@@ -75,8 +75,8 @@ const products = [
 Nhiễm khuẩn da và cấu trúc da`,
         descriptionDetail: `Điều trị các nhiễm khuẩn ở mức độ nhẹ và vừa do các vi khuẩn nhạy cảm: 
 - Nhiễm khuẩn đường hô hấp trên: 
-+ Viêm họng/viêm amidan: do Streptococcus pyogenes. Trong điều trị và dự phòng nhiễm khuẩn do liên cầu, bao gồm cả dự phòng thấp tim, thuốc thường được lựa chọn là penicilin dùng đường tiêm bắp. Cefprozil nói chung có hiệu quả trong việc loại bỏ Streptococcus pyogenes từ mũi họng; tuy nhiên hiện nay chưa có đầy đủ dữ liệu để xác định hiệu quả của cefprozil trong dự phòng thấp tim. 
-+ Viêm tai giữa, viêm xoang cấp: do Streptococcus pneumoniae, Haemophilus influenzae (kể cả chủng tiết ẞ- lactamase) và Moraxella catarrhalis (kể cả chủng tiết ẞ- lactamase).
+    + Viêm họng/viêm amidan: do Streptococcus pyogenes. Trong điều trị và dự phòng nhiễm khuẩn do liên cầu, bao gồm cả dự phòng thấp tim, thuốc thường được lựa chọn là penicilin dùng đường tiêm bắp. Cefprozil nói chung có hiệu quả trong việc loại bỏ Streptococcus pyogenes từ mũi họng; tuy nhiên hiện nay chưa có đầy đủ dữ liệu để xác định hiệu quả của cefprozil trong dự phòng thấp tim. 
+    + Viêm tai giữa, viêm xoang cấp: do Streptococcus pneumoniae, Haemophilus influenzae (kể cả chủng tiết ẞ- lactamase) và Moraxella catarrhalis (kể cả chủng tiết ẞ- lactamase).
  - Nhiễm khuẩn đường hô hấp dưới: Viêm phổi thứ phát cấp tính và đợt cấp của viêm phổi mạn tính (do Streptococcus pneumoniae, Haemophilus influenzae (kể cả chủng tiết ẞ- lactamase) và Moraxella catarrhalis (kể cả chủng tiết ẞ- lactamase)). 
 - Nhiễm khuẩn da và cấu trúc da không biến chứng: do Staphylococcus aureus (kể cả chủng tiết penicillinase) và Streptococcus pyogenes.`,
         category: "Thuốc kháng sinh",

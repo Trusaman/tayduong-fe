@@ -113,7 +113,7 @@ export default function ProductCard({ product }: { product: Product }) {
                                         {t("Usage")}
                                     </h3>
                                     <div className="bg-blue-50 rounded-xl p-4">
-                                        <p className="text-body text-gray-700">
+                                        <p className="text-body text-gray-700 whitespace-pre-line">
                                             {product.descriptionDetail}
                                         </p>
                                     </div>
