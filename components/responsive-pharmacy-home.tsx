@@ -1,14 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import {
-    Clock,
-    Pill,
-    Home,
-    Beaker,
-    PoundSterling,
-    UserPlus,
-} from "lucide-react";
 import { useEffect, useState } from "react";
 import Header from "./header";
 import Footer from "./footer";

@@ -11,7 +11,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Building2, Users, Award, Phone, Star, Quote } from "lucide-react";
+import { Building2, Users, Award, Phone, Star } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import { useState } from "react";
@@ -214,27 +214,6 @@ export default function CustomersPage() {
             icon: Star,
             title: t("CompetitivePricing"),
             description: t("CompetitivePricingDesc"),
-        },
-    ];
-
-    const testimonials = [
-        {
-            customer: "Bachmai",
-            name: tCustomers("Bachmai"),
-            content: t("TestimonialBachmai"),
-            role: "Procurement Director",
-        },
-        {
-            customer: "Longchau",
-            name: tCustomers("Longchau"),
-            content: t("TestimonialLongchau"),
-            role: "Supply Chain Manager",
-        },
-        {
-            customer: "BV108",
-            name: tCustomers("BV108"),
-            content: t("TestimonialBV108"),
-            role: "Medical Director",
         },
     ];
 
