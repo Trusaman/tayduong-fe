@@ -12,12 +12,15 @@ import {
 } from "@/components/ui/select";
 import { Link } from "@/i18n/routing";
 import { Product } from "@/api/products";
+import { useTranslations } from "next-intl";
 
 export default function ProductList({
     initialProducts,
 }: {
     initialProducts: Product[];
 }) {
+    const t = useTranslations("ProductsPage");
+
     const [selectedCategory, setSelectedCategory] = useState("All Categories");
 
     const groupedProducts = initialProducts.reduce((acc, product) => {
@@ -39,7 +42,7 @@ export default function ProductList({
         <>
             <div className="mb-6 flex items-center">
                 <span className="mr-2 text-gray-700 font-medium">
-                    Filter by category:
+                    {t("FilterBy")}:
                 </span>
                 <Select
                     value={selectedCategory}
