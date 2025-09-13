@@ -33,8 +33,11 @@ export default function ProductCard({ product }: { product: Product }) {
                     {/* Enhanced Product Info Section */}
                     <div className="p-8 lg:p-12 flex flex-col justify-center">
                         <div className="mb-6">
-                            <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded-full mb-4">
+                            <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded-full mb-2">
                                 Pharmaceutical Product
+                            </span>
+                            <span className="inline-block px-3 py-1 bg-teal-100 text-teal-700 text-sm font-medium rounded-full mb-4 ml-2">
+                                {product.category}
                             </span>
                             <h1 className="text-heading-xl text-gray-900 mb-3">
                                 {product.name}
