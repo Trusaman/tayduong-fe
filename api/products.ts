@@ -197,6 +197,23 @@ Phòng và điều trị hỗ trợ xơ gan, ung thư gan.`,
         descriptionDetail: `Điều trị các bệnh nhiễm khuẩn do các vi khuẩn nhạy cảm với ceftizoxim như: nhiễm khuẩn đường hô hấp dưới, nhiễm khuẩn đường niệu, bệnh lậu không biến chứng, viêm vùng chậu, nhiễm khuẩn huyết, nhiễm khuẩn trong ổ bụng, nhiễm khuẩn xương, khớp, nhiễm khuẩn da và cấu trúc da, viêm màng não.`,
         category: "Thuốc kháng sinh",
     },
+    {
+        id: 17,
+        name: "Justone 30mg/5ml",
+        brand: "Công ty cổ phần Medcen",
+        image: "https://res.cloudinary.com/dzyeanw6v/image/upload/v1758093945/justone-2_zuv406.jpg",
+        description: `Điều trị: 
+        Làm loãng đờm, tiêu đờm trong các bệnh hô hấp có tăng tiết đờm, 
+        Giảm triệu chứng ho có đờm, Viêm phế quản cấp và mãn tính, hen phế quản có tiết đờm, 
+        Giãn phế quản, các đợt cấp của bệnh phổi tắc nghẽn mạn (COPD) nếu có đờm đặc.`,
+        descriptionDetail: `Justone siro với hoạt chất Ambroxol hydrochloride 30 mg/5 ml được sử dụng trong:
+
+- Các bệnh đường hô hấp cấp và mãn tính có tăng tiết dịch đờm như viêm phế quản, hen phế quản, giãn phế quản.  
+- Tình trạng tắc nghẽn đường hô hấp do đàm nhớt, khó khạc.  
+- Hỗ trợ cải thiện triệu chứng ho có đờm, làm loãng đờm để dễ tống ra ngoài.  
+- Có thể dùng cho trẻ em (tùy theo độ tuổi), người lớn và người cao tuổi với liều phù hợp.`,
+        category: "Thuốc long đờm",
+    },
 ] as Product[];
 
 export const getProducts = async (): Promise<Product[]> => products;

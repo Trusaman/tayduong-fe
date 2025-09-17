@@ -48,7 +48,7 @@ export default function ProductCard({ product }: { product: Product }) {
                         </div>
 
                         <div className="mb-8">
-                            <p className="text-body-lg text-gray-600 leading-relaxed">
+                            <p className="text-body-lg text-gray-600 leading-relaxed whitespace-pre-line">
                                 {product.description}
                             </p>
                         </div>
