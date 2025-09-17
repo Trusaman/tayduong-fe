@@ -85,9 +85,11 @@ export default function StyledHubSpotForm() {
                     }
                     #hubspot-form-container .hs-input {
                         width: 100%;
-                        padding: 0.5rem;
+                        padding: 0.75rem;
                         border: 1px solid #e2e8f0;
-                        border-radius: 0.25rem;
+                        border-radius: 0.5rem;
+                        min-height: 44px;
+                        font-size: 1rem;
                     }
                     #hubspot-form-container .hs-error-msg {
                         color: #ef4444;
@@ -100,11 +102,13 @@ export default function StyledHubSpotForm() {
                         background-color: #f97316;
                         color: white;
                         font-weight: bold;
-                        padding: 0.5rem 1rem;
+                        padding: 0.75rem 1.25rem;
                         border: none;
-                        border-radius: 0.25rem;
+                        border-radius: 0.5rem;
+                        min-height: 44px;
                         cursor: pointer;
                         transition: background-color 0.3s;
+                        font-size: 1rem;
                     }
                     #hubspot-form-container .hs-button:hover {
                         background-color: #ea580c;

@@ -15,7 +15,7 @@ export default function ProductCard({ product }: { product: Product }) {
             <div className="bg-white rounded-3xl shadow-strong overflow-hidden border border-gray-100">
                 <div className="grid lg:grid-cols-2 gap-0">
                     {/* Enhanced Product Image Section */}
-                    <div className="relative bg-gradient-to-br from-teal-500 via-teal-600 to-blue-600 p-8 lg:p-12 flex items-center justify-center">
+                    <div className="relative bg-gradient-to-br from-teal-500 via-teal-600 to-blue-600 p-6 sm:p-8 lg:p-12 flex items-center justify-center">
                         <div className="relative">
                             <Image
                                 src={product.image}
@@ -39,7 +39,7 @@ export default function ProductCard({ product }: { product: Product }) {
                             <span className="inline-block px-3 py-1 bg-teal-100 text-teal-700 text-sm font-medium rounded-full mb-4 ml-2">
                                 {product.category}
                             </span>
-                            <h1 className="text-heading-xl text-gray-900 mb-3">
+                            <h1 className="text-heading-lg md:text-heading-xl text-gray-900 mb-3">
                                 {product.name}
                             </h1>
                             <p className="text-body text-red-600 font-medium mb-6">
@@ -61,7 +61,7 @@ export default function ProductCard({ product }: { product: Product }) {
                                 <Button
                                     variant="outline"
                                     size="icon"
-                                    className="rounded-full"
+                                    className="rounded-full h-11 w-11"
                                 >
                                     <Facebook className="h-5 w-5" />
                                 </Button>
@@ -96,13 +96,13 @@ export default function ProductCard({ product }: { product: Product }) {
                     <TabsList className="grid w-full grid-cols-2 bg-gray-100 p-1 rounded-xl">
                         <TabsTrigger
                             value="description"
-                            className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-soft transition-all"
+                            className="rounded-lg py-3 min-h-[44px] data-[state=active]:bg-white data-[state=active]:shadow-soft transition-all"
                         >
                             {t("ProductInfo")}
                         </TabsTrigger>
                         <TabsTrigger
                             value="details"
-                            className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-soft transition-all"
+                            className="rounded-lg py-3 min-h-[44px] data-[state=active]:bg-white data-[state=active]:shadow-soft transition-all"
                         >
                             {t("TechnicalSpecs")}
                         </TabsTrigger>

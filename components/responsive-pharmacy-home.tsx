@@ -90,14 +90,14 @@ export default function ResponsivePharmacyHome() {
                                 </span>
                             </div>
 
-                            <h1 className="text-display-xl sm:text-display-lg md:text-display-xl text-gray-900 mb-6 max-w-4xl">
+                            <h1 className="text-heading-lg sm:text-heading-xl md:text-display-lg lg:text-display-xl text-gray-900 mb-6 max-w-4xl">
                                 <span className="bg-gradient-to-r from-blue-600 via-teal-600 to-blue-700 bg-clip-text text-transparent">
                                     {/* Your Health, Our Priority */}
                                     {t("HeroTitle")}
                                 </span>
                             </h1>
 
-                            <p className="text-body-xl text-gray-600 mb-10 max-w-3xl leading-relaxed text-justify">
+                            <p className="text-body sm:text-body-lg md:text-body-xl text-gray-600 mb-10 max-w-3xl leading-relaxed text-justify">
                                 {t("HeroSubtitle")}
                             </p>
 

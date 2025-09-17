@@ -40,7 +40,7 @@ export default function ProductList({
 
     return (
         <>
-            <div className="mb-6 flex items-center">
+            <div className="mb-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                 <span className="mr-2 text-gray-700 font-medium">
                     {t("FilterBy")}:
                 </span>
@@ -48,7 +48,7 @@ export default function ProductList({
                     value={selectedCategory}
                     onValueChange={setSelectedCategory}
                 >
-                    <SelectTrigger className="w-[180px]">
+                    <SelectTrigger className="w-full sm:w-[180px] h-11">
                         <SelectValue>{selectedCategory}</SelectValue>
                     </SelectTrigger>
                     <SelectContent>
@@ -60,7 +60,7 @@ export default function ProductList({
                     </SelectContent>
                 </Select>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                 {filteredProducts.map((product, index) => (
                     <div
                         key={product.id}
