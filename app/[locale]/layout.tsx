@@ -6,6 +6,7 @@ import { Roboto } from "next/font/google";
 import { Metadata } from "next";
 import Script from "next/script";
 import "../globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const roboto = Roboto({
     weight: ["300", "400", "500", "700"],
@@ -113,6 +114,7 @@ export default async function LocaleLayout({
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>
+                <SpeedInsights />
             </body>
         </html>
     );
